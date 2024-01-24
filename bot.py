@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from Almortagel import Almortagel
+from almortagel import Almortagel
 from utlis.rank import setrank ,isrank ,remrank ,setsudos ,remsudos ,setsudo
 from handlers.callback import updateCallback
 from handlers.msg import updateHandlers
