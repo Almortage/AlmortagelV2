@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from almortagel import Almortagel
+from Almortagel import Almortagel
 from utlis.rank import setrank ,isrank ,remrank ,setsudos ,remsudos ,setsudo
 from handlers.callback import updateCallback
 from handlers.msg import updateHandlers
@@ -24,7 +24,6 @@ BOT_ID = "5688348631"
 
 app = Client("NB"+BOT_ID,bot_token=Almortagel.ALMORTAGEL,api_id = Almortagel.API_ID, api_hash = Almortagel.API_HASH)
 setsudo(R,SUDO)
-R.set("{}Nbot:BOTrank".format(BOT_ID), BOT_ID)
 
 if R.get("{}:Nbot:restart".format(BOT_ID)):
   Bot("sendMessage",{"chat_id":R.get("{}:Nbot:restart".format(BOT_ID)),"text":"تم اعادة تشغيل البوت - Done restart the bot","parse_mode":"html"})
