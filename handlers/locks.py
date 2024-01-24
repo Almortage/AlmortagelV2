@@ -4,7 +4,7 @@ from utlis.tg import Bot
 import importlib
 
 import threading, requests, time, random, re,json
-from config import *
+
 
 
 def locks(client, message,redis):

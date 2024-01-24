@@ -2,7 +2,7 @@ from utlis.rank import setrank,isrank,remrank,remsudos,setsudo, GPranks,Grank,ID
 from utlis.tg import Bot , Ckuser
 from utlis.send import send_msg, BYusers, Name,Glang,sendM,getAge
 from utlis.locks import st,Clang,st_res
-from config import *
+
 
 from pyrogram.types import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton
 import threading, requests, time, random, re, json

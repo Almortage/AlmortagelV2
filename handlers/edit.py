@@ -2,7 +2,7 @@
 from utlis.rank import setrank ,isrank ,remrank ,setsudos ,remsudos ,setsudo
 from handlers.delete import delete
 from utlis.tg import Bot
-from config import *
+
 
 import threading, requests, time, random
 

@@ -2,7 +2,7 @@ from utlis.rank import setrank,isrank,remrank,remsudos,setsudo, GPranks,IDrank
 from utlis.send import send_msg, BYusers, GetLink,Name,Glang,getAge
 from utlis.locks import st,getOR
 from utlis.tg import Bot
-from config import *
+
 
 from pyrogram.types import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton
 import threading, requests, time, random, re, json, datetime
@@ -54,7 +54,7 @@ def allGP(client, message,redis):
         Bot("sendMessage",{"chat_id":chatID,"text":r.userNocc,"reply_to_message_id":message.id,"parse_mode":"html"})
 
     if re.search(c.sors,text):
-      kb = InlineKeyboardMarkup([[InlineKeyboardButton("قناه السورس 📢", url="t.me/AlmortagelTech")],[InlineKeyboardButton("تواصل السورس 💬", url="t.me/AlmortagelTech2")],[InlineKeyboardButton("مطور السورس📑", url="t.me/Almortagel_12")]])
+      kb = InlineKeyboardMarkup([[InlineKeyboardButton("قناه السورس 📢", url="t.me/Source_Ze")],[InlineKeyboardButton("تواصل السورس 💬", url="t.me/A_5bot")],[InlineKeyboardButton("قناة الملفات 📑", url="t.me/UP_UO")]])
       Botuser = client.get_me().username
       Bot("sendMessage",{"chat_id":chatID,"text":r.sors.format("@"+Botuser),"disable_web_page_preview":True,"reply_to_message_id":message.id,"parse_mode":"markdown","reply_markup":kb})
     
