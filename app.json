@@ -10,7 +10,7 @@
 	],
 	"repository": "https://github.com/Almortage/AlmortagelV2",
     "env": {
-        "ELHYBA": {
+        "ALMORTAGEL": {
             "description": "Your Telegram Bot Token from @BotFather",
             "value": ""
         },
