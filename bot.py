@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-
+from Almortagel import Almortagel
 from utlis.rank import setrank ,isrank ,remrank ,setsudos ,remsudos ,setsudo
 from handlers.callback import updateCallback
 from handlers.msg import updateHandlers
@@ -9,8 +9,8 @@ from utlis.tg import Bot,Del24
 from handlers.edit import edit
 from utlis.locks import GPck
 from handlers.nf import nf
-from config import *
 
+SUDO = Almortagel.OWNER
 from pyrogram.types import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton
 import threading, requests, time, random, importlib
 import redis
@@ -20,7 +20,9 @@ R = redis.Redis(charset="utf-8", decode_responses=True)
 if not os.path.isdir('./files'):
     os.mkdir("./files")
     
-app = Client("NB"+BOT_ID,bot_token=TOKEN,api_id = API_ID, api_hash = API_HASH)
+BOT_ID = "5688348631"
+
+app = Client("NB"+BOT_ID,bot_token=Almortagel.ALMORTAGEL,api_id = Almortagel.API_ID, api_hash = Almortagel.API_HASH)
 setsudo(R,SUDO)
 R.set("{}Nbot:BOTrank".format(BOT_ID), BOT_ID)
 
